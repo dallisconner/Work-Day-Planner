@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead text-dark"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div id="calendar-row1" class="row">
+        <div id="time1"class="col-md-1 hour">8 AM</div>
+        <textarea rows="3" id="text-entry1" class="col-md-10 text-dark"></textarea>
+        <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+  
+      <div id="calendar-row2" class="row">
+        <div id="time2"class="col-md-1 hour">9 AM</div>
+        <textarea rows="3" id="text-entry2" class="col-md-10 text-dark"></textarea>
+        <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+  
+      <div id="calendar-row3" class="row">
+        <div id="time3"class="col-md-1 hour">10 AM</div>
+        <textarea rows="3" id="text-entry3" class="col-md-10 text-dark"></textarea>
+        <button class="col-md-1 saveBtn""><i class="far fa-save"></i></button>
+      </div>
+  
+      <div id="calendar-row4" class="row">
+        <div id="time4"class="col-md-1 hour">11 AM</div>
+        <textarea rows="3" id="text-entry4" class="col-md-10 text-dark"></textarea>
+        <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+  
+      <div id="calendar-row5" class="row">
+        <div id="time5"class="col-md-1 hour">12 PM</div>
+        <textarea rows="3" id="text-entry5" class="col-md-10 text-dark"></textarea>
+        <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+  
+      <div id="calendar-row6" class="row">
+        <div id="time6"class="col-md-1 hour">1 PM</div>
+        <textarea rows="3" id="text-entry6" class="col-md-10 text-dark"></textarea>
+        <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+  
+      <div id="calendar-row7" class="row">
+        <div id="time7"class="col-md-1 hour">2 PM</div>
+        <textarea rows="3" id="text-entry7" class="col-md-10 text-dark"></textarea>
+        <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+  
+      <div id="calendar-row8" class="row">
+        <div id="time8"class="col-md-1 hour">3 PM</div>
+        <textarea rows="3" id="text-entry8" class="col-md-10 text-dark"></textarea>
+        <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+  
+      <div id="calendar-row9" class="row">
+        <div id="time9"class="col-md-1 hour">4 PM</div>
+        <textarea rows="3" id="text-entry9" class="col-md-10 text-dark"></textarea>
+        <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+  
+      <div id="calendar-row10" class="row">
+        <div id="time10"class="col-md-1 hour">5 PM</div>
+        <textarea rows="3" id="text-entry10" class="col-md-10 text-dark"></textarea>
+        <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
