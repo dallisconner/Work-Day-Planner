@@ -49,3 +49,43 @@ for(i=1;i<11;i++)
     $(textEntry).addClass("present");
   }
 }
+
+$(document).ready(function(){
+  if(!localStorage.getItem("workDay")) 
+  {
+    updateCalendar(workDay);
+  } 
+  else 
+  {
+    updateCalendar(JSON.parse(localStorage.getItem("workDay")));
+  }
+})
+
+function updateCalendar(task) {
+  $(".row").each(function(index) 
+  {
+    var row = $(this).children("div");
+    $(this).children("textarea").text(task[row.text()]);
+  })
+}
+
+$("button").click(function() 
+{
+  hourString = $(this).siblings("div").text();
+  value = $(this).siblings("textarea").val();
+  
+  saveCalendar(hourString, value);
+});
+
+function saveCalendar(hourString, val) 
+{
+  if(!localStorage.getItem("workDay")) 
+  {
+    localStorage.setItem("workDay", JSON.stringify(workDay));
+  }
+
+  var hours = JSON.parse(localStorage.getItem("workDay"));
+  hours[hourString] = val
+
+  localStorage.setItem("workDay", JSON.stringify(hours));
+}
